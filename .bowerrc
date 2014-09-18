@@ -1,0 +1,4 @@
+{
+  "directory": "bower_components",
+   "proxy":"http://sjc-entbc-001:80"
+}
