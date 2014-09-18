@@ -9,17 +9,16 @@
  */
 angular.module('yAnApp')
   .controller('MainCtrl', function ($scope,localStorageService) {
-    $scope.todos = ['Item1','Item2','Item3'];
+    $scope.todo={};
+    $scope.todo.todos = ['Item1','Item2','Item3'];
+    $scope.todo.todo = '';
     $scope.addTodo = function () {
-        console.log( $scope.tod);
-        console.log($scope.test);
-        $scope.todos.push($scope.tod);
-        console.log($scope.tod);
-        $scope.tod = '';
+        $scope.todo.todos.push($scope.todo.todo);
+        $scope.todo.todo = '';
      };
 
         $scope.removeTodo = function (index) {
-            $scope.todos.splice(index, 1);
+            $scope.todo.todos.splice(index, 1);
         };
 
   });

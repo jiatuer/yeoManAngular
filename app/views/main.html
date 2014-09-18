@@ -5,22 +5,17 @@
     <form role="form" ng-submit="addTodo()">
         <div class="row">
             <div class="input-group">
-                <input type="text" ng-model="tod" placeholder="What needs to be done?" class="form-control">
+                <input type="text" ng-model="todo.todo" placeholder="What needs to be done?" class="form-control">
                 <span class="input-group-btn">
                 <input type="submit" value="Add" class="btn btn-primary">
                 </span>
             </div>
-
-            <div class="input-group">
-                <input type="text" ng-model="test" placeholder="test" class="form-control">
-            </div>
-
         </div>
     </form>
-    <p><span>{{tod}}</span></p>
+    <p><span>{{todo.todo}}</span></p>
     <!-- Todos list -->
-    <div  ui-sortable ng-model="todos">
-        <p ng-repeat="todo in todos" class="input-group" style="padding:5px 10px; cursor: move;">
+    <div  ui-sortable ng-model="todo.todos">
+        <p ng-repeat="todo in todo.todos" class="input-group" style="padding:5px 10px; cursor: move;">
 
             <input type="text" ng-model="todo" class="form-control">
             <span class="input-group-btn">
