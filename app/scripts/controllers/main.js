@@ -10,9 +10,9 @@
 angular.module('yAnApp')
   .controller('MainCtrl', function ($scope,localStorageService) {
     $scope.todos = ['Item1','Item2','Item3'];
+        $scope.tod = "item";
     $scope.addTodo = function () {
         console.log( $scope.tod);
-        console.log($scope.test);
         $scope.todos.push($scope.tod);
         console.log($scope.tod);
         $scope.tod = '';
