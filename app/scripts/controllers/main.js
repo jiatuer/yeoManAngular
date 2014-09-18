@@ -16,7 +16,6 @@ angular.module('yAnApp')
         $scope.todo.todos.push($scope.todo.todo);
         $scope.todo.todo = '';
      };
-
         $scope.removeTodo = function (index) {
             $scope.todo.todos.splice(index, 1);
         };
